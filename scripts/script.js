@@ -114,4 +114,9 @@ function getErrorMsg(validityState) {
   return errorMsg;
 }
 
-
+$(document).ready(function() {
+  $('#slider .slick-carousel').slick({
+    arrows: false,
+    dots: true
+  });
+});

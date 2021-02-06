@@ -306,9 +306,62 @@ body {
     margin-top: 1rem;
 }
 
-
-
-
+/* Carousel section */
+#slider {
+    padding: 5rem 1rem 1rem;
+    position: relative;
+}
+#slider .slick-carousel {
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.17);
+    padding-bottom: 2rem;
+}
+#slider .slide {
+    padding: 0.5rem;
+}
+#slider h2 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #3d2514;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#slider h2 .slider-title-lead {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.25rem;
+    letter-spacing: 0.125rem;
+}
+#slider p {
+    font-family: 'Montserrat', sans-serif;
+    color: #3d3d3d;
+}
+/* Custom style for the slick slider */
+#slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.5rem;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#slider .slick-dots li button {
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    color: #dcdcdc;
+    border: none;
+    margin: 0.125rem 0.25rem;
+}
+#slider .slick-dots li.slick-active button {
+    background-color: #ffc045;
+    color: #ffc045;
+}
+/* End of slick custom style */
 
 /* Reservation - book a table form */
 #reservation {
