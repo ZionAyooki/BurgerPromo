@@ -200,4 +200,49 @@ body {
     letter-spacing: 0.75rem;
 }
 
+/* Try it section */
+#try-it {
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1;
+    padding-top: 3rem;
+    color: #fff;
+}
+.try-it-title {
+    font-size: 1.125rem;
+}
+.try-it-subtitle {
+    font-size: 2rem;
+}
+#try-it .try-it-popular, #try-it .try-it-fun, #try-it .try-it-fresh {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+#try-it .try-it-popular {
+    background: url("../images/left-meal-image.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 26rem;
+}
+#try-it .try-it-fun {
+    background: url("../images/top-meal-image.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 12rem;
+}
+#try-it .try-it-fresh {
+    background: url("../images/bottom-meal-image.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: 12rem;
+}
+
+/* Banner title - button looks */
+#banner {
+    padding-top: 3rem;
+    text-align: center;
+}
+#banner span {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+    background-color: #ffc045;
+    padding: 0.375rem 1rem;
+}
+
 
