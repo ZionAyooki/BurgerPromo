@@ -242,49 +242,60 @@
       <!-- End of carousel section -->
 
       <!-- Book a table form -->
-      <div class="container-fluid">
+      <div id="reservation">
         <div class="container">
-          <h2>
-            <div>reservation</div>
-            <div>book your table</div>
+          <h2 class="d-flex flex-column align-items-center">
+            <span class="reservation-lead">reservation</span>
+            <span class="reservation-big">book your table</span>
           </h2>
           <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
-              <form id="booking-form" class="container-fluid">
+              <div id="booking-form-msg"></div>
+              <form id="booking-form" class="container-fluid" novalidate>
                 <div class="row">
                   <div class="col-12 col-md-6 form-floating mb-3">
-                    <input id="book-name" class="form-control" type="text" name="name" placeholder="NAME" />
+                    <input id="book-name" class="form-control" type="text" name="name" aria-describedby="book-error-name"
+                           placeholder="NAME" required />
                     <label for="book-name">Name</label>
+                    <div id="book-error-name" class="form-feedback"></div>
                   </div>
                   <div class="col-12 col-md-6 form-floating mb-3">
-                    <input id="book-email" class="form-control" type="email" name="email" placeholder="EMAIL" />
+                    <input id="book-email" class="form-control" type="email" name="email"
+                           aria-describedby="book-error-email" placeholder="EMAIL" required />
                     <label for="book-email">Email</label>
+                    <div id="book-error-email" class="form-feedback"></div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6 form-floating mb-3">
-                    <input id="book-date" class="form-control" type="text" name="date" placeholder="DATE" />
+                    <input id="book-date" class="form-control" type="text" name="date"
+                           aria-describedby="book-error-date" placeholder="DATE" required />
                     <label for="book-date">Date</label>
+                    <div id="book-error-date" class="form-feedback"></div>
                   </div>
                   <div class="col-12 col-md-6 form-floating mb-3">
-                    <input id="book-time" class="form-control" type="text" name="time" placeholder="TIME" />
+                    <input id="book-time" class="form-control" type="text" name="time"
+                           aria-describedby="book-error-time" placeholder="TIME" required />
                     <label for="book-time">Time</label>
+                    <div id="book-error-time" class="form-feedback"></div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6 form-floating mb-3">
-                    <input id="book-people" class="form-control" type="number" name="people" placeholder="PEOPLE" />
+                    <input id="book-people" class="form-control" type="number" name="people"
+                           aria-describedby="book-error-people" placeholder="PEOPLE" required min="1" max="10" />
                     <label for="book-people">People</label>
+                    <div id="book-error-people" class="form-feedback"></div>
                   </div>
                   <div class="col-12 col-md-6 d-flex justify-content-center mb-3">
-                    <button type="submit" class="d-block w-100">find a table</button>
+                    <button type="submit" class="d-block w-100 book-submit">find a table</button>
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-        <div>
+        <div class="form-bg-image">
           <img src="images/cut-plate.png" alt="">
         </div>
       </div>

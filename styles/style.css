@@ -307,3 +307,56 @@ body {
 }
 
 
+
+
+
+/* Reservation - book a table form */
+#reservation {
+    padding-top: 3rem;
+    position: relative;
+}
+#reservation h2 {
+    color: #3d2514;
+    text-align: center;
+}
+#reservation .reservation-lead {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    padding-bottom: 0.5rem;
+}
+#reservation .reservation-big {
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+#booking-form {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d3d3d;
+    margin: 3rem 0;
+}
+#booking-form label {
+    left: 0.75rem;
+}
+#booking-form .book-submit {
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: uppercase;
+    background-color: #bf2222;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+}
+#reservation .form-bg-image {
+    position: absolute;
+    width: 15%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+#reservation .form-bg-image img {
+    width: 100%;
+}
+
+
+
