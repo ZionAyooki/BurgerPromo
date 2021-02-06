@@ -501,3 +501,50 @@ body {
 #page-foot .footer-copy {
     font-family: 'Bebas Neue', cursive;
 }
+
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 576px) {
+    #page-hero h1 {
+        font-size: 2.35rem;
+    }
+    #page-hero .hero-title-lead {
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #slider .slick-carousel {
+        padding-bottom: 3rem;
+    }
+    #slider h2 {
+        text-align: left;
+    }
+    #slider .slick-dots {
+        left: 3rem;
+    }
+    #reservation .reservation-lead {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #reservation .reservation-big {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #page-hero h1 {
+        font-size: 2.7rem;
+    }
+    #page-hero .hero-title-lead {
+        font-size: 4.9rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #page-hero h1 {
+        font-size: 3rem;
+    }
+    #page-hero .hero-title-lead {
+        font-size: 5.5rem;
+    }
+}
