@@ -358,5 +358,46 @@ body {
     width: 100%;
 }
 
+/* Custom form validation style (in addition to bootstrap style) */
+.was-validated input ~ .form-feedback {
+    display: none;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+}
+.was-validated input:invalid ~ .form-feedback {
+    display: block;
+    color: #dc3545;
+}
+#booking-form-msg .alert-heading {
+    font-size: 1.25rem;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+#booking-form-msg .alert-danger .alert-heading {
+    border-bottom: 1px solid #842029;
+}
+#booking-form-msg .alert-success .alert-heading {
+    border-bottom: 1px solid #0f5132;
+}
+#booking-form-msg .alert-errors {
+    display: flex;
+    flex-direction: column;
+}
+#booking-form-msg .alert-errors span::before {
+    content: "\f06a";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #842029;
+    display: inline-block;
+    padding-right: 0.25rem;
+}
+#reservation .alert-focus {
+    display: block;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    margin-left: -1px;
+    overflow: hidden;
+}
 
 
