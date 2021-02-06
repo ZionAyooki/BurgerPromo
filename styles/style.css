@@ -1,0 +1,99 @@
+body {
+    background-color: #fff;
+}
+
+/* Background for top */
+.bg-head {
+    background: #ffc045 url("../images/head-bg.jpg") repeat top left;
+}
+
+/* Header */
+#page-head {
+    padding: 1rem 0;
+}
+#page-head .navbar > .container-fluid {
+    padding: 0;
+}
+#page-head a {
+    font-family: 'Bebas Neue', cursive;
+    color: #3d2514;
+}
+.head-logo {
+    font-size: 2rem;
+}
+.logo-img {
+    max-width: 3.4rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+/* Menu button for mobile devices with animation */
+.menu-button {
+    display: flex;
+    border-color: #3d2514;
+    color: #3d2514;
+    padding: 1rem 0.75rem;
+}
+.menu-button .navbar-toggler-icon {
+    position: relative;
+    background-color: transparent;
+    width: 1rem;
+    height: 0.125rem;
+}
+.menu-button .navbar-toggler-icon::before, .menu-button .navbar-toggler-icon::after {
+    content: "";
+    background-color: #3d2514;
+    width: 1rem;
+    height: 0.125rem;
+    position: absolute;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+.menu-button .navbar-toggler-icon::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+.menu-button .navbar-toggler-icon::after {
+    top: 0;
+    transform: rotate(135deg);
+}
+.menu-button.collapsed .navbar-toggler-icon {
+    background-color: #3d2514;
+}
+.menu-button.collapsed .navbar-toggler-icon::before {
+    bottom: 0.375rem;
+    transform: rotate(0deg);
+}
+.menu-button.collapsed .navbar-toggler-icon::after {
+    top: 0.375rem;
+    transform: rotate(0deg);
+}
+/* For accessibility - adding status of the menu button */
+.menu-button .menu-button-sr::before {
+    content: "Close ";
+}
+.menu-button.collapsed .menu-button-sr::before {
+    content: "Open ";
+}
+
+/* Main menu with hover effect */
+.delivery-phone span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #3d2514;
+    padding: 0 0.5rem;
+}
+.delivery-phone img {
+    max-height: 1.5rem;
+}
+#main-menu .nav-item {
+    letter-spacing: 0.125rem;
+    padding: 0 1rem;
+}
+#main-menu .nav-link:hover, #main-menu .nav-link:focus {
+    background-color: #3d2514;
+    color: #ffc045;
+}
+
+

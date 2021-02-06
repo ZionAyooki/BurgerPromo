@@ -34,23 +34,24 @@
   </head>
   <body>
     <!-- Header (logo and menu) -->
-    <header>
-      <div class="container">
+    <header class="bg-head">
+      <div id="page-head" class="container">
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="images/burger-logo_brown.svg" alt="" />
-              <span>burger house</span>
+            <a class="navbar-brand d-flex align-items-end head-logo" href="#">
+              <img class="logo-img" src="images/burger-logo_brown.svg" alt="" />
+              <span class="logo-text">burger house</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false">
+            <button class="navbar-toggler menu-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false">
+              <span class="visually-hidden menu-button-sr">Navigation menu</span>
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="main-menu" class="collapse navbar-collapse">
-              <div class="navbar-text">
+            <div id="main-menu" class="collapse navbar-collapse flex-column align-items-end text-center">
+              <div class="navbar-text delivery-phone">
                 <img src="images/scooter.svg" alt="" />
                 <span>Express Delivery +1 234 567 890</span>
               </div>
-              <ul class="navbar-nav">
+              <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -60,7 +61,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">our story</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pe-md-0">
                   <a class="nav-link" href="#">contact us</a>
                 </li>
               </ul>
