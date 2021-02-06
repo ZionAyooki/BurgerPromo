@@ -400,4 +400,51 @@ body {
     overflow: hidden;
 }
 
-
+/* Footer section */
+#page-foot {
+    background: #000 url("../images/footer-bg.jpg") no-repeat center center;
+    background-size: cover;
+    margin-top: 0.25rem;
+    color: #ffffff;
+    padding: 2rem 1rem;
+}
+#page-foot .footer-logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+}
+#page-foot .footer-logo .logo-img {
+    width: 3.4rem;
+    margin-right: 1rem;
+}
+#page-foot .footer-info {
+    padding: 3rem 0;
+}
+#page-foot .footer-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+}
+#page-foot .footer-contact {
+    font-family: 'Bebas Neue', cursive;
+}
+#page-foot .footer-contact h2 {
+    font-size: 1.25rem;
+}
+#page-foot .footer-contact i {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 4rem;
+}
+#page-foot .social-link {
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    width: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+#page-foot .footer-copy {
+    font-family: 'Bebas Neue', cursive;
+}
