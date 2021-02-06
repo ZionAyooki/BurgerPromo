@@ -96,4 +96,108 @@ body {
     color: #ffc045;
 }
 
+/* Hero section */
+#page-hero {
+    color: #3d2514;
+    padding-bottom: 2rem;
+}
+#page-hero h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 0.125rem 0.125rem #fee8bc;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+#page-hero .hero-title-lead {
+    font-size: 3.5rem;
+}
+#page-hero .hero-slogan {
+    font-family: 'Bebas Neue', cursive;
+    border: 0.125rem dashed #3d2514;
+    padding: 0.25rem 0.875rem;
+    margin-bottom: 1rem;
+}
+/* Hero deal */
+#page-hero .hero-deal {
+    position: relative;
+}
+.hero-deal::before { /* no content (only absolute positioned elements), define the height based on width */
+    content: "";
+    display: block;
+    padding-top: 75%;
+    background: radial-gradient(50% 50%, #ffe1a5 0%, #ffe1a5 40%, transparent 100%);
+}
+.hero-deal-image {
+    position: absolute;
+}
+.hero-deal-french-fries {
+    width: 30%;
+    left: 5%;
+    bottom: 28%;
+    transform: rotate(-40deg);
+}
+.hero-deal-coke {
+    width: 25%;
+    right: 10%;
+    bottom: 8%;
+}
+.hero-deal-coke-shadow {
+    width: 35%;
+    height: 7%;
+    background: radial-gradient(50% 50%, #000 0%, rgba(0,0,0,0.7) 20%, transparent 70%);
+    position: absolute;
+    bottom: 3%;
+    right: 0;
+    opacity: 0.64;
+}
+.hero-deal-burger {
+    width: 65%;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+.hero-deal-burger-shadow {
+    width: 65%;
+    height: 7%;
+    background: radial-gradient(50% 50%, #000 0%, rgba(0,0,0,0.7) 20%, transparent 70%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.64;
+}
+.hero-deal-price {
+    background-color: #bf2222;
+    border-radius: 50%;
+    font-family: 'Bebas Neue', cursive;
+    width: 8rem;
+    height: 8rem;
+    left: 5%;
+    bottom: 0;
+    padding: 0.5rem;
+}
+.hero-deal-price-inner {
+    border-radius: 50%;
+    border: 0.125rem dashed #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    line-height: 1;
+}
+.hero-deal-price-inner .dollars {
+    font-size: 3rem;
+}
+.hero-deal-price-inner .cents {
+    font-size: 2rem;
+}
+.hero-deal-price-inner .text-only {
+    font-size: 1.375rem;
+}
+.hero-deal-price-inner .text-only span {
+    letter-spacing: 0.75rem;
+}
+
 

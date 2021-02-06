@@ -75,24 +75,42 @@
     <!-- Main content -->
     <main>
       <!-- Hero section -->
-      <div class="container">
-        <div class="row align-items-start">
-          <div class="col-12 col-md-6">
-            <h1>Burger Week</h1>
-            <div>it is a good time for the great taste of burgers</div>
-          </div>
-          <!-- Hero deal images and title for SR -->
-          <div class="col-12 col-md-6">
-            <div class="visually-hidden">Special deal: Burger with coke and french fries, only $5.49</div>
-            <div class="hero-deal" aria-hidden="true">
-              <img src="images/frenchFries.png" alt="" />
-              <img src="images/coke.png" alt="" />
-              <img src="images/burger1.png" alt="" />
-              <div>$5.49 ONLY</div>
+      <div id="page-hero" class="bg-head">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-12 col-md-6 d-flex flex-column-reverse align-items-start">
+              <h1 class="d-flex flex-column">
+                <span class="hero-title-lead">Burger</span>
+                <span>Week</span>
+              </h1>
+              <div class="hero-slogan">it is a good time for the great taste of burgers</div>
+            </div>
+            <!-- Hero deal images and title for SR -->
+            <div class="col-12 col-md-6">
+              <div class="visually-hidden">Special deal: Burger with coke and french fries, only $5.49</div>
+              <div class="hero-deal" aria-hidden="true">
+                <img class="hero-deal-image hero-deal-french-fries" src="images/frenchFries.png" alt="" />
+                <img class="hero-deal-image hero-deal-coke" src="images/coke.png" alt="" />
+                <div class="hero-deal-coke-shadow"></div>
+                <img class="hero-deal-image hero-deal-burger" src="images/burger1.png" alt="" />
+                <div class="hero-deal-burger-shadow"></div>
+                <div class="hero-deal-image hero-deal-price">
+                  <div class="hero-deal-price-inner">
+                    <div>
+                      <span class="dollars">$5</span>
+                      <span class="cents">.49</span>
+                    </div>
+                    <div class="text-only">
+                      <span>ONL</span>Y
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- End of hero section -->
 
       <!-- Try it section -->
